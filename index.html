@@ -23,33 +23,150 @@ td {
 border-top: 1px solid #A0A0A0;
 width: 50%
 }
-img {
-  width: 50%;
+.dots::after {
+  content: "...";
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: right;
+  color: #A0A0A0;
+}
+.dots {
+  height: 0.7cm 
+}
+div.arrow {
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 8px solid white;
+  display: inline-block;
+  text-align: right;
+  margin-left: 8px;
+}
+.seconddots::after {
+  content: "...";
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: right;
+  color: white;
+}
+.searchbar {
+  background-color: gray
+}
+.seconddots {
+  height: 0.7cm 
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper img {
+    position: absolute;
+    top: 3px;
+    left: 0px;
 }
 </style>
-  
+
+<!-- The first -->
+
 <body>
   <table>
   </tr>
   <tr>
-    <th>Name</th>
+    <th>Name
+      <div class="arrow"></div>
+    </th>
     <th>Date</th>
   </tr>
   <tr>
     <td><span style="color:white">file.pdf</span></td>  
     <td><span style="color: #A9A9A9">3 seconds ago</span></td>
-    <td><img src = "images/more.svg" alt="dots"/></td>
+    <td class="dots"></td>
+</td>
   </tr>
   <tr>
     <td><span style="color:white">file.pdf</span></td>  
     <td><span style="color: #A9A9A9">yesterday</span></td>
+    <td class="dots"></td>
   </tr>
   <tr>
     <td><span style="color:white">file.pdf</span></td>  
     <td><span style="color: #A9A9A9">Jan 2d 2021</span></td>
+    <td class="dots"></td>
   </tr>
   </table>
    
-</body>
+<br>
 
-</html>
+<!--The second-->
+
+<table>
+</tr>
+<tr>
+  <th>
+ <input type="checkbox" checked>&nbsp;&nbsp;&nbsp;<span style="color:white">Name
+ <div class="arrow"></div>
+  </th>
+  <th>Date</th>
+</tr>
+<tr>
+  <td><input type="checkbox">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td>
+  <label for="checkbox"></label></td> 
+  <td><span style="color: #A9A9A9">3 seconds ago</span></td>
+  <td class="seconddots"></td>
+</td>
+</tr>
+<tr>
+  <td><input type="checkbox" checked>&nbsp;&nbsp;&nbsp<span style="color:white">file.pdf</span></td>
+    <label for="checkbox"></label></td> 
+  <td><span style="color: #A9A9A9">yesterday</span></td>
+  <td class="seconddots"></td>
+</tr>
+<tr>
+  <td><input type="checkbox">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td>
+  <label for="checkbox"></label></td>  
+  <td><span style="color: #A9A9A9">Jan 2d 2021</span></td>
+  <td class="seconddots"></td>
+</tr>
+</table>
+
+<!--The third-->
+<br>
+<table>
+</tr>
+<tr>
+  <th>Name
+    <div class="arrow"></div>
+  </th>
+  <th>Date</th>
+  <th> 
+      <div class="searchbar">
+      <div id="sb-search" class="sb-search">
+      <div class="search-wrapper">
+      <input class="search-input" placeholder="&nbsp;&nbsp;&nbsp;Search" type="text" value="" name="search" id="search"/>
+      <img class="search-pic"src="imgages/loupe.svg"/>
+      </div>
+    </form>
+  </th>
+</tr>
+<tr>
+  <td><span style="color:white">file.pdf</span></td>  
+  <td><span style="color: #A9A9A9">3 seconds ago</span></td>
+  <td class="dots"></td>
+</td>
+</tr>
+<tr>
+  <td><span style="color:white">file.pdf</span></td>  
+  <td><span style="color: #A9A9A9">yesterday</span></td>
+  <td class="dots"></td>
+</tr>
+<tr>
+  <td><span style="color:white">file.pdf</span></td>  
+  <td><span style="color: #A9A9A9">Jan 2d 2021</span></td>
+  <td class="dots"></td>
+</tr>
+</table>
+<br>
+
+</body>
