@@ -50,22 +50,16 @@ div.arrow {
   text-align: right;
   color: white;
 }
-.searchbar {
-  background-color: gray
-}
 .seconddots {
   height: 0.7cm 
 }
 
-.search-wrapper {
-    position: relative;
+#search {
+  background-image: url(images/dY2WMR7-search-icon-light-grey-clipart.png);
+  position: left;
+  background-repeat: no-repeat;
 }
 
-.search-wrapper img {
-    position: absolute;
-    top: 3px;
-    left: 0px;
-}
 </style>
 
 <!-- The first -->
@@ -118,7 +112,7 @@ div.arrow {
 </td>
 </tr>
 <tr>
-  <td><input type="checkbox" checked>&nbsp;&nbsp;&nbsp<span style="color:white">file.pdf</span></td>
+  <td><input type="checkbox" checked>&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td>
     <label for="checkbox"></label></td> 
   <td><span style="color: #A9A9A9">yesterday</span></td>
   <td class="seconddots"></td>
@@ -140,31 +134,24 @@ div.arrow {
     <div class="arrow"></div>
   </th>
   <th>Date</th>
-  <th> 
-      <div class="searchbar">
-      <div id="sb-search" class="sb-search">
-      <div class="search-wrapper">
-      <input class="search-input" placeholder="&nbsp;&nbsp;&nbsp;Search" type="text" value="" name="search" id="search"/>
-      <img class="search-pic"src="imgages/loupe.svg"/>
-      </div>
-    </form>
+  <th>
+  <input type="text" id="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search"
   </th>
-</tr>
 <tr>
-  <td><span style="color:white">file.pdf</span></td>  
+  <td><img src="images/folder.png" alt="png" width="15" height="15" style="float:left">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td>  
   <td><span style="color: #A9A9A9">3 seconds ago</span></td>
-  <td class="dots"></td>
+  <td class="seconddots"></td>
 </td>
 </tr>
 <tr>
-  <td><span style="color:white">file.pdf</span></td>  
+  <td><img src="images/folder.png" alt="png" width="15" height="15" style="float:left">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td> 
   <td><span style="color: #A9A9A9">yesterday</span></td>
-  <td class="dots"></td>
+  <td class="seconddots"></td>
 </tr>
 <tr>
-  <td><span style="color:white">file.pdf</span></td>  
+  <td><img src="images/folder.png" alt="png" width="15" height="15" style="float:left">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td> 
   <td><span style="color: #A9A9A9">Jan 2d 2021</span></td>
-  <td class="dots"></td>
+  <td class="seconddots"></td>
 </tr>
 </table>
 <br>
