@@ -54,10 +54,11 @@ div.arrow {
   height: 0.7cm 
 }
 
-#search {
-  background-image: url(images/dY2WMR7-search-icon-light-grey-clipart.png);
-  position: left;
-  background-repeat: no-repeat;
+.input{
+  position:relative;
+}
+.loupe {
+  position:absolute
 }
 
 </style>
@@ -135,7 +136,10 @@ div.arrow {
   </th>
   <th>Date</th>
   <th>
-  <input type="text" id="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search"
+    <form class="search">
+      <img src="images/dY2WMR7-search-icon-light-grey-clipart.png" alt="search" title="pic" class="loupe">
+       <input type="text" placeholder="Search" class="input">
+  </form>
   </th>
 <tr>
   <td><img src="images/folder.png" alt="png" width="15" height="15" style="float:left">&nbsp;&nbsp;&nbsp;<span style="color:white">file.pdf</span></td>  
